@@ -1,5 +1,10 @@
 # ed25519_encryption
 
+[<img alt="github" src="https://img.shields.io/badge/ed25519_encryption-8da0cb?style=for-the-badge&labelColor=555555&logo=github" height="20">](https://github.com/Experimental-Projects-NAS/ed25519_encryption)
+[<img alt="crates.io" src="https://img.shields.io/crates/v/ed25519_encryption.svg?style=for-the-badge&color=fc8d62&logo=rust" height="20">](https://crates.io/crates/ed25519_encryption)
+[<img alt="docs.rs" src="https://img.shields.io/badge/docs.rs-ed25519_encryption-66c2a5?style=for-the-badge&labelColor=555555&logo=docs.rs" height="20">](https://docs.rs/ed25519_encryption)
+[<img alt="build status" src="https://img.shields.io/github/actions/workflow/status/Experimental-Projects-NAS/ed25519_encryption/release.yml?branch=main&style=for-the-badge" height="20">](https://github.com/Experimental-Projects-NAS/ed25519_encryption/actions?query=branch%3Amain)
+
 **ed25519_encryption:** A Rust and Node.js library that facilitates secure encryption and decryption by converting Ed25519 keys to X25519 keys. It utilizes elliptic-curve Diffie-Hellman (ECDH) to derive a shared secret, which is then used for symmetric encryption with AES-256-GCM.
 
 This project was bootstrapped by [create-neon](https://www.npmjs.com/package/create-neon).
