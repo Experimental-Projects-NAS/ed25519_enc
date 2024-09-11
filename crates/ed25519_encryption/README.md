@@ -40,7 +40,7 @@ let x25519_pub: [u8; 32] = to_x25519_pub(ed25519_pub);
 Encrypt and decrypt data/message using **ed25519** keys and **aes-gcm-256**:
 
 ```rust
-use ed25519_encryption::{encrypt}
+use ed25519_encryption::{encrypt, decrypt}
 
 ...
 
