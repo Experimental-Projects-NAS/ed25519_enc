@@ -109,8 +109,8 @@ dependencies = [
 ]
 
 [[package]]
-name = "ed25519_encryption"
-version = "0.1.1"
+name = "ed25519_enc"
+version = "0.1.2"
 dependencies = [
  "aes-gcm",
  "ed25519_to_curve25519",

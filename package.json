@@ -1,6 +1,6 @@
 {
-  "name": "ed25519_encryption",
-  "version": "0.1.1",
+  "name": "ed25519_enc",
+  "version": "0.1.2",
   "description": "A Rust and Node.js library that facilitates secure encryption and decryption by converting Ed25519 keys to X25519 keys. It utilizes elliptic-curve Diffie-Hellman (ECDH) to derive a shared secret, which is then used for symmetric encryption with AES-256-GCM.",
   "main": "./lib/index.cjs",
   "scripts": {
@@ -37,7 +37,7 @@
   ],
   "neon": {
     "type": "library",
-    "org": "@ed25519_encryption",
+    "org": "@ed25519_enc",
     "platforms": "common",
     "load": "./src/load.cts"
   },
@@ -52,7 +52,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Experimental-Projects-NAS/ed25519_encryption.git"
+    "url": "git+https://github.com/Experimental-Projects-NAS/ed25519_enc.git"
   },
   "keywords": [
     "cryptography",
@@ -62,14 +62,14 @@
     "aes-gcm-256"
   ],
   "bugs": {
-    "url": "https://github.com/Experimental-Projects-NAS/ed25519_encryption/issues"
+    "url": "https://github.com/Experimental-Projects-NAS/ed25519_enc/issues"
   },
-  "homepage": "https://github.com/Experimental-Projects-NAS/ed25519_encryption#readme",
+  "homepage": "https://github.com/Experimental-Projects-NAS/ed25519_enc#readme",
   "optionalDependencies": {
-    "@ed25519_encryption/win32-x64-msvc": "0.1.0",
-    "@ed25519_encryption/darwin-x64": "0.1.0",
-    "@ed25519_encryption/darwin-arm64": "0.1.0",
-    "@ed25519_encryption/linux-x64-gnu": "0.1.0",
-    "@ed25519_encryption/linux-arm64-gnu": "0.1.0"
+    "@ed25519_enc/win32-x64-msvc": "0.1.0",
+    "@ed25519_enc/darwin-x64": "0.1.0",
+    "@ed25519_enc/darwin-arm64": "0.1.0",
+    "@ed25519_enc/linux-x64-gnu": "0.1.0",
+    "@ed25519_enc/linux-arm64-gnu": "0.1.0"
   }
 }

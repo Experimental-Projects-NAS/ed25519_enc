@@ -1,18 +1,18 @@
-# ed25519_encryption
+# ed25519_enc
 
-[<img alt="github" src="https://img.shields.io/badge/ed25519_encryption-8da0cb?style=for-the-badge&labelColor=555555&logo=github" height="20">](https://github.com/Experimental-Projects-NAS/ed25519_encryption)
-[<img alt="crates.io" src="https://img.shields.io/crates/v/ed25519_encryption.svg?style=for-the-badge&color=fc8d62&logo=rust" height="20">](https://crates.io/crates/ed25519_encryption)
+[<img alt="github" src="https://img.shields.io/badge/ed25519_enc-8da0cb?style=for-the-badge&labelColor=555555&logo=github" height="20">](https://github.com/Experimental-Projects-NAS/ed25519_enc)
+[<img alt="crates.io" src="https://img.shields.io/crates/v/ed25519_enc.svg?style=for-the-badge&color=fc8d62&logo=rust" height="20">](https://crates.io/crates/ed25519_enc)
 [<img alt="NPM Version" src="https://img.shields.io/npm/v/ed25519_enc?style=for-the-badge&logo=npm&color=red" height="20">](https://img.shields.io/npm/v/ed25519_enc)
-[<img alt="docs.rs" src="https://img.shields.io/badge/docs.rs-ed25519_encryption-66c2a5?style=for-the-badge&labelColor=555555&logo=docs.rs" height="20">](https://docs.rs/ed25519_encryption)
-[<img alt="build status" src="https://img.shields.io/github/actions/workflow/status/Experimental-Projects-NAS/ed25519_encryption/release.yml?branch=main&style=for-the-badge" height="20">](https://github.com/Experimental-Projects-NAS/ed25519_encryption/actions?query=branch%3Amain)
+[<img alt="docs.rs" src="https://img.shields.io/badge/docs.rs-ed25519_enc-66c2a5?style=for-the-badge&labelColor=555555&logo=docs.rs" height="20">](https://docs.rs/ed25519_enc)
+[<img alt="build status" src="https://img.shields.io/github/actions/workflow/status/Experimental-Projects-NAS/ed25519_enc/release.yml?branch=main&style=for-the-badge" height="20">](https://github.com/Experimental-Projects-NAS/ed25519_enc/actions?query=branch%3Amain)
 
-**ed25519_encryption:** A Rust and Node.js library that facilitates secure encryption and decryption by converting Ed25519 keys to X25519 keys. It utilizes elliptic-curve Diffie-Hellman (ECDH) to derive a shared secret, which is then used for symmetric encryption with AES-256-GCM.
+**ed25519_enc:** A Rust and Node.js library that facilitates secure encryption and decryption by converting Ed25519 keys to X25519 keys. It utilizes elliptic-curve Diffie-Hellman (ECDH) to derive a shared secret, which is then used for symmetric encryption with AES-256-GCM.
 
 This project was bootstrapped by [create-neon](https://www.npmjs.com/package/create-neon).
 
-## Building ed25519_encryption
+## Building ed25519_enc
 
-Building ed25519_encryption requires a [supported version of Node and Rust](https://github.com/neon-bindings/neon#platform-support).
+Building ed25519_enc requires a [supported version of Node and Rust](https://github.com/neon-bindings/neon#platform-support).
 
 To run the build, run:
 
@@ -22,9 +22,9 @@ $ npm run build
 
 This command uses the [@neon-rs/cli](https://www.npmjs.com/package/@neon-rs/cli) utility to assemble the binary Node addon from the output of `cargo`.
 
-## Exploring ed25519_encryption
+## Exploring ed25519_enc
 
-After building ed25519_encryption, you can explore its exports at the Node console:
+After building ed25519_enc, you can explore its exports at the Node console:
 
 ```sh
 $ npm i
@@ -82,7 +82,7 @@ Runs the unit tests by calling `cargo test`. You can learn more about [adding te
 The directory structure of this project is:
 
 ```
-ed25519_encryption/
+ed25519_enc/
 ├── Cargo.toml
 ├── README.md
 ├── lib/
@@ -90,7 +90,7 @@ ed25519_encryption/
 |   ├── index.mts
 |   └── index.cts
 ├── crates/
-|   └── ed25519_encryption/
+|   └── ed25519_enc/
 |       └── src/
 |           └── lib.rs
 ├── platforms/

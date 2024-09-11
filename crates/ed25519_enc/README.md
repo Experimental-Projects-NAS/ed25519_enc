@@ -1,9 +1,10 @@
-# ed25519_encryption
+# ed25519_enc
 
-[<img alt="github" src="https://img.shields.io/badge/ed25519_encryption-8da0cb?style=for-the-badge&labelColor=555555&logo=github" height="20">](https://github.com/Experimental-Projects-NAS/ed25519_encryption)
-[<img alt="crates.io" src="https://img.shields.io/crates/v/ed25519_encryption.svg?style=for-the-badge&color=fc8d62&logo=rust" height="20">](https://crates.io/crates/ed25519_encryption)
-[<img alt="docs.rs" src="https://img.shields.io/badge/docs.rs-ed25519_encryption-66c2a5?style=for-the-badge&labelColor=555555&logo=docs.rs" height="20">](https://docs.rs/ed25519_encryption)
-[<img alt="build status" src="https://img.shields.io/github/actions/workflow/status/Experimental-Projects-NAS/ed25519_encryption/release.yml?branch=main&style=for-the-badge" height="20">](https://github.com/Experimental-Projects-NAS/ed25519_encryption/actions?query=branch%3Amain)
+[<img alt="github" src="https://img.shields.io/badge/ed25519_enc-8da0cb?style=for-the-badge&labelColor=555555&logo=github" height="20">](https://github.com/Experimental-Projects-NAS/ed25519_enc)
+[<img alt="crates.io" src="https://img.shields.io/crates/v/ed25519_enc.svg?style=for-the-badge&color=fc8d62&logo=rust" height="20">](https://crates.io/crates/ed25519_enc)
+[<img alt="NPM Version" src="https://img.shields.io/npm/v/ed25519_enc?style=for-the-badge&logo=npm&color=red" height="20">](https://img.shields.io/npm/v/ed25519_enc)
+[<img alt="docs.rs" src="https://img.shields.io/badge/docs.rs-ed25519_enc-66c2a5?style=for-the-badge&labelColor=555555&logo=docs.rs" height="20">](https://docs.rs/ed25519_enc)
+[<img alt="build status" src="https://img.shields.io/github/actions/workflow/status/Experimental-Projects-NAS/ed25519_enc/release.yml?branch=main&style=for-the-badge" height="20">](https://github.com/Experimental-Projects-NAS/ed25519_enc/actions?query=branch%3Amain)
 
 
 A Rust library that facilitates secure encryption and decryption by converting **Ed25519** keys to **X25519** keys. Utilizes **elliptic-curve Diffie-Hellman (ECDH)** to derive a shared secret for **aes-gcm-256** symmetrical encryption.
@@ -11,7 +12,7 @@ A Rust library that facilitates secure encryption and decryption by converting *
 ## Installation
 
 ```shell
-$ cargo add ed25519_encryption
+$ cargo add ed25519_enc
 ```
 
 ## Usage
@@ -19,7 +20,7 @@ $ cargo add ed25519_encryption
 From **ed25519** private key to **x25519**:
 
 ```rust
-use ed25519_encryption::{to_x25519_priv};
+use ed25519_enc::{to_x25519_priv};
 ...
 let ed25519_priv: [u8; 32] = [
   157, 097, 177, 157, 239, 253, 090, 096,
@@ -33,7 +34,7 @@ let x25519_priv: [u8; 32] = to_x25519_priv(ed25519_priv);
 From **ed25519** public key to **x25519**:
 
 ```rust
-use ed25519_encryption::{to_x25519_pub};
+use ed25519_enc::{to_x25519_pub};
 ...
 let ed25519_pub: [u8; 32] = [
   215, 090, 152, 001, 130, 177, 010, 183,
@@ -47,7 +48,7 @@ let x25519_pub: [u8; 32] = to_x25519_pub(ed25519_pub);
 Encrypt and decrypt data/message using **ed25519** keys and **aes-gcm-256**:
 
 ```rust
-use ed25519_encryption::{encrypt, decrypt}
+use ed25519_enc::{encrypt, decrypt}
 
 ...
 
