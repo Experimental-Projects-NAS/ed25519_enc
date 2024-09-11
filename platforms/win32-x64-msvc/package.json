@@ -1,0 +1,40 @@
+{
+  "name": "@ed25519_encryption/win32-x64-msvc",
+  "description": "Prebuilt binary package for `ed25519_encryption` on `win32-x64-msvc`.",
+  "version": "0.1.0",
+  "os": [
+    "win32"
+  ],
+  "cpu": [
+    "x64"
+  ],
+  "main": "index.node",
+  "files": [
+    "index.node"
+  ],
+  "neon": {
+    "type": "binary",
+    "rust": "x86_64-pc-windows-msvc",
+    "node": "win32-x64-msvc",
+    "os": "win32",
+    "arch": "x64",
+    "abi": "msvc"
+  },
+  "author": "Son",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Experimental-Projects-NAS/ed25519_encryption.git"
+  },
+  "keywords": [
+    "cryptography",
+    "ed25519",
+    "x25519",
+    "elliptic-curve-cryptography",
+    "aes-gcm-256"
+  ],
+  "bugs": {
+    "url": "https://github.com/Experimental-Projects-NAS/ed25519_encryption/issues"
+  },
+  "homepage": "https://github.com/Experimental-Projects-NAS/ed25519_encryption#readme",
+  "license": "MIT"
+}
