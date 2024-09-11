@@ -1,6 +1,6 @@
 [package]
 name = "ed25519_encryption"
-version = "0.1.0"
+version = "0.1.1"
 description = "A Rust and Node.js library that facilitates secure encryption and decryption by converting Ed25519 keys to X25519 keys. It utilizes elliptic-curve Diffie-Hellman (ECDH) to derive a shared secret, which is then used for symmetric encryption with AES-256-GCM."
 authors = ["Son"]
 license = "MIT OR Apache-2.0"
