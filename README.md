@@ -24,8 +24,17 @@ After building ed25519_encryption, you can explore its exports at the Node conso
 $ npm i
 $ npm run build
 $ node
-> require('.').greeting()
-{ message: 'hello node' }
+> const lib = require('.');
+> const sender_priv = Buffer.from("D12549B4AE46086002E4110B1F94D0BA942C2967AA83D3003590FD7A5087C6A8", "hex");
+> const sender_pub = Buffer.from("B68F106DAA004E7AE715C5159E1C27CB864EED20D3ACB332BD6F87E89226E925", "hex");
+> const receiver_priv = Buffer.from("3C659C3FD72E56861C81C1684C5C342958645E2C459A11A2282B46161E47BF2E", "hex");
+> const receiver_pub = Buffer.from("C02ABDA285014F207D5D31219E0F5647484F6DFF09E595DF38BDBDB07CE6E1B2", "hex");
+> const data = Buffer.from("Hello World!");
+> const enc_data = lib.encrypt(sender_priv, receiver_pub, data);
+> const dec_data = lib.decrypt(receiver_priv, sender_pub, enc_data);
+> console.log("Decrypted data: ", new TextDecoder().decode(dec_data));
+
+Decrypted data:  Hello World!
 ```
 
 ## Available Scripts
