@@ -1,6 +1,6 @@
 {
   "name": "ed25519_enc",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "A Rust and Node.js library that facilitates secure encryption and decryption by converting Ed25519 keys to X25519 keys. It utilizes elliptic-curve Diffie-Hellman (ECDH) to derive a shared secret, which is then used for symmetric encryption with AES-256-GCM.",
   "main": "./lib/index.cjs",
   "scripts": {
