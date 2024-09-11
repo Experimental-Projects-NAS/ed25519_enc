@@ -1,7 +1,7 @@
 {
   "name": "@ed25519_enc/darwin-arm64",
   "description": "Prebuilt binary package for `ed25519_enc` on `darwin-arm64`.",
-  "version": "0.1.1",
+  "version": "0.1.3",
   "os": [
     "darwin"
   ],
